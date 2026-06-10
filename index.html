@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Максим Гущин — режиссёр трансляции</title>
+  <!-- DNS prefetch для ускорения шрифтов -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Только нужные веса шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ── NAV ── -->
+<nav class="nav">
+
+  <div class="nav-logo"></div>
+
+  <ul class="nav-links">
+    <li><a href="#about">Обо мне</a></li>
+    <li><a href="#stats">Цифры</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+
+  <a href="#contacts" class="nav-pill">Написать →</a>
+
+  <button class="nav-burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<header class="hero">
+
+  <!-- Desktop: video as full background -->
+  <video class="hero-bg hero-bg-desktop" autoplay muted loop playsinline poster="bg/main.mp4">
+    <!-- <source src="bg/main.webm" type="video/webm"> -->
+    <source src="bg/main.mp4" type="video/mp4">
+    <!-- <img src="img/za.webp" alt="Максим Гущин"> -->
+  </video>
+
+  <div class="hero-overlay hero-overlay-desktop"></div>
+
+  <!-- Desktop: text over video -->
+  <div class="hero-content animate">
+    <p class="hero-tag">Режиссёр трансляции</p>
+    <h1>Максим<br>Гущин</h1>
+    <p class="hero-desc">Многокамерные эфиры. Спорт. Концерты.<br>Форумы и корпоративные события.</p>
+    <div class="hero-brands">
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+      <a href="#contacts" class="btn btn-outline">Написать</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+
+  <!-- Mobile: text block on top, video below (natural ratio) -->
+  <div class="hero-mobile-layout">
+    <div class="hero-mobile-text animate">
+      <p class="hero-tag">Режиссёр трансляции</p>
+      <h1>Максим<br>Гущин</h1>
+      <p class="hero-desc">Многокамерные эфиры. Спорт. Концерты.<br>Форумы и корпоративные события.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+        <a href="#contacts" class="btn btn-outline">Написать</a>
+      </div>
+    </div>
+    <div class="hero-mobile-video">
+      <video autoplay muted loop playsinline poster="bg/main.mp4">
+        <!-- <source src="bg/main.webm" type="video/webm"> -->
+        <source src="bg/main.mp4" type="video/mp4">
+        <!-- <img src="img/za.webp" alt="Максим Гущин"> -->
+      </video>
+    </div>
+  </div>
+
+</header>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <img src="bg/kn-hlop.webp" class="section-deco deco-clapper" alt="" aria-hidden="true">
+  <div class="about-grid">
+
+    <div class="about-text animate">
+      <p class="section-tag">Обо мне</p>
+      <h2>Эфир — не просто<br>задача. Это моя<br>ответственность</h2>
+      <p class="about-body">
+        Профессионализм, проверенный сотнями прямых трансляций. Точность кадра, синхронность команды, интуиция зрителя — всё это складывается в результат, который работает
+      </p>
+      <p class="about-body">
+        Работаю с ведущими телеканалами, федерациями и продакшн-студиями. Каждый проект — это не просто эфир, а цельная история
+      </p>
+      <div class="about-skills">
+        <span>Многокамерные трансляции</span>
+        <span>Спортивные эфиры</span>
+        <span>Концерты и шоу</span>
+        <span>Форумы и конференции</span>
+        <span>Гибридные эфиры</span>
+        <span>ТВ и digital</span>
+      </div>
+    </div>
+
+    <div class="about-photos animate">
+      <div class="about-photo-main">
+        <img loading="lazy" src="img/za_2.webp" alt="Работа на трансляции">
+      </div>
+      <div class="about-photo-secondary">
+        <img loading="lazy" src="img/222222222.webp" alt="За пультом режиссёра">
+      </div>
+      <!-- Акцентный блок вместо третьего фото -->
+      <div class="about-photo-accent">
+        <div class="about-photo-accent-text">
+          <strong>13+</strong>
+          <span>лет в профессии</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── STATS (2 показателя) ── -->
+<section class="stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat animate">
+      <div class="stat-number">1000+</div>
+      <div class="stat-label">прямых трансляций</div>
+    </div>
+    <div class="stat animate">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">крупных проектов</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PROJECTS ── -->
+<section class="projects" id="projects">
+  <img src="bg/lampa.webp" class="section-deco deco-lights" alt="" aria-hidden="true">
+  <div class="projects-header animate">
+    <p class="section-tag">Проекты</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card animate">
+      <div class="project-card-img">
+        <img loading="lazy" src="img/Sport/sport_2.webp" alt="Спорт">
+        <div class="project-card-overlay">
+          <span class="project-cat">Спорт</span>
+        </div>
+      </div>
+      <div class="project-card-body">
+        <h3>Спортивные трансляции</h3>
+        <ul>
+          <li>UWW Grappling World Championships 2021</li>
+          <li>Чемпионат России по вольной борьбе 2021–2024</li>
+          <li>Континентальная хоккейная лига (КХЛ), сезоны 2018–2025</li>
+          <li>Чемпионат России по спортивной гимнастике 2025</li>
+          <li>Чемпионат России по лёгкой атлетике 2025</li>
+          <li>Чемпионат России по регби 2018–2025</li>
+          <li>Суперлига по футзалу 2016–2026</li>
+          <li>Футбольная национальная лига (ФНЛ), сезоны 2018–2026</li>
+          <li>Женская футбольная суперлига, сезоны 2020–2024</li>
+          <li>Молодежная футбольная лига (МФЛ), сезоны 2023–2025</li>
+          <li>Чемпионат России по пляжному футболу 2015–2023</li>
+          <li>Высшая хоккейная лига (ВХЛ), сезоны 2014–2017</li>
+          <li>Молодежная хоккейная лига (МХЛ), сезоны 2017–2024</li>
+          <li>Чемпионат России по паделу 2023–2025</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card animate">
+      <div class="project-card-img">
+        <img loading="lazy" src="img/Conzert/conzert_2.webp" alt="Концерты">
+        <div class="project-card-overlay">
+          <span class="project-cat">Концерты и шоу</span>
+        </div>
+      </div>
+      <div class="project-card-body">
+        <h3>Концерты и шоу</h3>
+        <ul>
+          <li>Баста</li>
+          <li>FEDUK</li>
+          <li>Bearwolf</li>
+          <li>Люся Чеботина</li>
+          <li>Клава Кока</li>
+          <li>Mary Gu</li>
+          <li>Ваня Дмитриенко</li>
+          <li>Казаки Делают Хиты</li>
+          <li>Ханна</li>
+          <li>Анна Немченко</li>
+          <li>X:in</li>
+          <li>Леонид Агутин</li>
+          <li>Uma2rman</li>
+          <li>Градусы</li>
+          <li>Александр Маршал</li>
+          <li>V Фестиваль Движения Первых</li>
+          <li>Международное Комьюнити Молодых Модельеров (MKMM) 2023–2026</li>
+          <li>XII Книжный фестиваль "Красная площадь"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card animate">
+      <div class="project-card-img">
+        <img loading="lazy" src="img/Raznoe/raz_2.webp" alt="Деловые мероприятия">
+        <div class="project-card-overlay">
+          <span class="project-cat">Деловые события</span>
+        </div>
+      </div>
+      <div class="project-card-body">
+        <h3>Деловые мероприятия</h3>
+        <ul>
+          <li>Форумы федерального и регионального уровня</li>
+          <li>Семинары и конференции</li>
+          <li>Корпоративные мероприятия</li>
+          <li>Официальные государственные события</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP / SLIDER ── -->
+<div class="photo-strip-wrapper">
+  <button class="strip-btn strip-btn-prev" aria-label="Назад">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="strip-btn strip-btn-next" aria-label="Вперёд">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <div class="photo-strip" id="photoStrip">
+    <!-- <div class="strip-item"><img loading="lazy" src="img/FullSizeRender.jpeg" alt="Режиссёр трансляции"></div> -->
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8634.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8879.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/1111111111111.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8979.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_9006.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8636.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8873.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8910.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/2182F3CE-EEEF-461E-9188-CD29691506A7.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_9009.webp" alt=""></div>
+
+    <div class="strip-item"><img loading="lazy" src="img/IMG_7015.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_2971.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8431.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_3619.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_8300.webp" alt=""></div>
+    <div class="strip-item"><img loading="lazy" src="img/IMG_3433.webp" alt=""></div>
+  </div>
+  <div class="strip-dots" id="stripDots"></div>
+</div>
+
+<!-- ── CONTACTS ── -->
+<footer class="contacts" id="contacts">
+  <img src="bg/pu.webp" class="section-deco deco-reel" alt="" aria-hidden="true">
+  <div class="contacts-inner animate">
+    <h2 class="section-tag">Контакты</h2>
+    <div class="contacts-row">
+
+      <a href="tel:+79852454641" class="contact-icon-link">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="contact-icon-label">Телефон</span>
+      </a>
+
+      <a href="https://t.me/Maks_Gushin" target="_blank" class="contact-icon-link">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg>
+        </span>
+        <span class="contact-icon-label">Telegram</span>
+      </a>
+
+      <a href="https://www.instagram.com/maksim_gyshin" target="_blank" class="contact-icon-link">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </span>
+        <span class="contact-icon-label">Instagram</span>
+      </a>
+
+    </div>
+    <div class="footer-year">© 2025 Максим Гущин</div>
+    <div class="meta-disclaimer">Meta Platforms Inc. признана экстремистской организацией, её продукты запрещены на территории РФ</div>
+    </div>
+
+
+</footer>
+ 
+<script src="script.js" defer></script>
+</body>
+</html>
